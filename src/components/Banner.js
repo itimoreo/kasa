@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/Banner.css';
 import logo from '../assets/LOGO.png';
 import background from '../assets/Image source 1.png';
+import { Link} from 'react-router-dom';
 
 
 const Banner = () => {
@@ -12,8 +13,8 @@ const Banner = () => {
                 <div className="banner-content">
                     <img src={logo} /> 
                     <div className="banner-links">
-                        <a href="/" className='home'>Accueil</a>
-                        <a href="/about" className='about'>A propos</a>
+                        <Link to="/" className='home'>Accueil</Link>
+                        <Link to="/about" className='about'>A propos</Link>
                     </div>
                     
                 </div>
