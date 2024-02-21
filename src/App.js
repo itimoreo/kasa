@@ -5,12 +5,13 @@ import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Body from './components/Body';
 import About from './components/About';
+import background from './assets/Image source 1.png';
 
 function App() {
   return (
     <div>
       <Router>
-        <Banner />
+        <Banner image ={background}/>
         <Routes>
           <Route path="/" exact element={<Body/>}/>
           <Route path="/about" exact element={<About/>}/>
