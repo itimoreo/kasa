@@ -6,19 +6,20 @@ import Footer from './components/Footer';
 import Body from './components/Body';
 import About from './components/About';
 import background from './assets/Image source 1.png';
+import CardPage from './components/Card-Page';  
 
 function App() {
   return (
-    <div>
+    <div className='body'>
       <Router>
         <Banner image ={background}/>
         <Routes>
-          <Route path="/" exact element={<Body/>}/>
-          <Route path="/about" exact element={<About/>}/>
+          <Route path="/" element={<Body/>}/>
+          <Route path="/card/:id" element={<CardPage/>}/>
+          <Route path="/about" element={<About/>}/>
         </Routes>
         <Footer />
       </Router>
-      
     </div>
   );
 }

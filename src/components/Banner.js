@@ -16,6 +16,7 @@ const Banner = () => {
       break;
     case '*':
       image = null;
+    
       
     default:
       image = background; 

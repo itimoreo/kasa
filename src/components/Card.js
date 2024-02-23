@@ -1,18 +1,16 @@
 import React from 'react';
-import data from '../json/appart.json'; 
+import { Link } from 'react-router-dom';
 import '../css/Card.css';
 
-const CardList = () => {
+function Card({ item }) {
   return (
-    <div>
-      {data.map((item) => (
-        <button key={item.id} className="card">
-          <img src={item.cover} alt={item.title} className='card-image' />
-          <h2 className='card-title'>{item.title}</h2>
-        </button>
-      ))}
+    <div className="card">
+      <Link to={`/card/${item.id}`}>
+        <img src={item.cover} alt={item.title} className='card-cover' />
+        <h2 className='card-title'>{item.title}</h2>
+      </Link>
     </div>
   );
-};
+}
 
-export default CardList;
+export default Card;
