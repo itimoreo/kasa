@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import jsonData from '../json/appart.json'; // Importez le fichier JSON
 import Banner from './Banner';
+import Slider from "./Card-Page-Slider";
 import '../css/Card-Page.css'
 
 function CardPage() {
@@ -14,6 +15,9 @@ function CardPage() {
 
   return (
     <div className="card-page">
+      <div className='slider'>
+        <Slider />
+      </div>
       <div className='cards-title-desc'>
         <h2>{item.title}</h2>
         <p>{item.location}</p>

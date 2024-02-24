@@ -10,16 +10,16 @@ const Banner = () => {
   let image;
 
   // Change the background image based on the current route
-  switch (location.pathname) {
-    case '/about':
-      image = background2;
-      break;
-    case '*':
-      image = null;
-    
-      
-    default:
-      image = background; 
+  if (/^\/card\/.+$/.test(location.pathname)) {
+    image = null;
+  } else {
+    switch (location.pathname) {
+      case '/about':
+        image = background2;
+        break;
+      default:
+        image = background; 
+    }
   }
 
   // Return the banner component

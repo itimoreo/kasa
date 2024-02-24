@@ -1,0 +1,47 @@
+/* Stylisez toutes les images */
+img {
+    height: 315px; /* Hauteur de l'image */
+    object-fit: cover; /* Changez cela en cover */
+}
+
+/* Stylisez le conteneur du slider */
+.slick-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+/* Stylisez chaque diapositive */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 315px; /* Vous pouvez ajuster cette valeur */
+}
+  
+/* Stylisez les images */
+.slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 25px; /* Rayon de bordure de l'image */
+}
+  
+/* Stylisez le conteneur du slider */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 315px; /* Hauteur du slider */
+    width: 1240px; /* Largeur du slider */
+    position: absolute; /* Positionnement absolu pour définir top et left */
+    top: 163px; /* Position depuis le haut */
+    left: 100px; /* Position depuis la gauche */
+}
+  
+/* Stylisez les images du slider */
+.slider-container img {
+    width: 1240px; /* Largeur de l'image */
+    height: 315px; /* Hauteur de l'image */
+    object-fit: cover; /* Changez cela en cover */
+    border-radius: 25px; /* Rayon de bordure de l'image */
+}
