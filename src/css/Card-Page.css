@@ -1,0 +1,25 @@
+.cards-title-desc{
+    display: flex;
+    flex-direction: column;
+    padding: 0 ;
+}
+
+.card-host-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .collapse-content.open {
+    max-height: 500px; /* Approximate max height */
+  }
+
+  .collapse-content.closed {
+    color: black;
+  }
