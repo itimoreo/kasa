@@ -10,15 +10,19 @@ import CardPage from './components/Card-Page';
 
 function App() {
   return (
-    <div className='body'>
+    <div className="App">
       <Router>
         <Banner image ={background}/>
-        <Routes>
-          <Route path="/" element={<Body/>}/>
-          <Route path="/card/:id" element={<CardPage/>}/>
-          <Route path="/about" element={<About/>}/>
-        </Routes>
-        <Footer />
+        <div className="Content">
+          <Routes>
+            <Route path="/" element={<Body/>}/>
+            <Route path="/card/:id" element={<CardPage/>}/>
+            <Route path="/about" element={<About/>}/>
+          </Routes>
+        </div>
+        <div className="Footer">
+          <Footer />
+        </div>
       </Router>
     </div>
   );

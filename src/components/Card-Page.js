@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import jsonData from '../json/appart.json'; // Importez le fichier JSON
 import Banner from './Banner';
 import Slider from "./Card-Page-Slider";
+import HostRating from './Card-Page-HostRate'
 import '../css/Card-Page.css'
 
 function CardPage() {
@@ -22,15 +23,12 @@ function CardPage() {
         <h2>{item.title}</h2>
         <p>{item.location}</p>
       </div>
-      <div className='card-host-rating'>
-        <div className='card-host'>
-          <img src={item.host.picture} alt={item.host.name} />
-          <p>{item.host.name}</p>
+      <div className='container-host'>
+        <div className='card-host-rating'>
+          <HostRating item={item} />
         </div>
-        <div className='card-rating'>
-          <p>{item.rating}</p>
-        </div>
-      </div>  
+      </div>
+      
       <div className='card-tag'>
         <p>{item.tags}</p>
       </div>
