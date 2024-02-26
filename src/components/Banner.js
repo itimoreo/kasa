@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Banner.css';
+import '../App.css'; // Importez App.css au lieu de Banner.css
 import logo from '../assets/LOGO.png';
 import { Link, useLocation } from 'react-router-dom';
 import background from '../assets/Image source 1.png';
@@ -22,11 +22,16 @@ const Banner = () => {
     }
   }
 
+  // Determine if we are on a location page
+  const isLocationPage = /^\/card\/.+$/.test(location.pathname);
+
   // Return the banner component
   return (
-    <div className="banner">
+    <div className={`banner ${isLocationPage ? 'location-page' : ''}`}>
       <div className="banner-content">
-        <img src={logo} /> 
+        <div className="kasa-logo">
+          <img src={logo} alt="Kasa logo" />
+        </div>
         <div className="banner-links">
           <Link to="/" className='home'>Accueil</Link>
           <Link to="/about" className='about'>A propos</Link>
@@ -34,7 +39,7 @@ const Banner = () => {
       </div>
       {image && (
         <div className='banner-background'>
-          <img src={image}/>
+          <img src={image} alt="Background"/>
           <div className='banner-background-txt'>
             Chez vous, partout et ailleurs
           </div>
