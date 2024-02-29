@@ -6,6 +6,7 @@ import Slider from "./Card-Page-Slider";
 import HostRating from './Card-Page-HostRate'
 import CollapsibleSection from './CollapsibleSection';
 import CollapsibleContainer from './CollapsibleContainer';
+import CardTag from './Card-Page-Tags';
 import '../css/Card-Page.css'
 
 function CardPage() {
@@ -25,14 +26,14 @@ function CardPage() {
         <h2>{item.title}</h2>
         <p>{item.location}</p>
       </div>
-      <div className='container-host'>
-        <div className='card-host-rating'>
-          <HostRating item={item} />
+      <div className='host-tags-container'>
+        <div className='container-host'>
+          <div className='card-host-rating'>
+            <HostRating item={item} />
+          </div>
         </div>
-      </div>
-      
-      <div className='card-tag'>
-        <p>{item.tags}</p>
+        
+        <CardTag tags={item.tags} />
       </div>
       <CollapsibleContainer>
         <CollapsibleSection

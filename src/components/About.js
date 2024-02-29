@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/About.css';
+import CollapsibleSection from './CollapsibleSection';
 
 function About() {
   const [isOpen, setIsOpen] = useState({});
@@ -30,16 +31,14 @@ function About() {
   return (
     <div className='about-container'>
       {data.map((item, index) => (
-        <div key={index}>
-          <button className='btn-about' onClick={() => toggle(index)}>
-            {item.title}
-          </button>
-          {isOpen[index] && (
-            <div className='collapse-text'>
-              {item.text}
-            </div>
-          )}
-        </div>
+        <CollapsibleSection
+          key={index}
+          title={item.title}
+          isOpen={isOpen[index]}
+          onToggleOpen={() => toggle(index)}
+        >
+          {item.text}
+        </CollapsibleSection>
       ))}
     </div>
   );

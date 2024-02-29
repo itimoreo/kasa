@@ -1,6 +1,12 @@
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
 
 }
+
+/* Media Query for Mobile M */
+@media (max-width: 375px) {
+    .container {
+      grid-template-columns: 1fr; /* Un seul élément par ligne */
+    }
+  }

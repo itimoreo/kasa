@@ -93,3 +93,29 @@
 .banner.location-page .banner-links {
   margin-right: auto;
 }
+
+@media (max-width: 375px) {
+  .banner .banner-content {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .banner .banner-content .kasa-logo,
+  .banner .banner-content .banner-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner .banner-background {
+    width: 100%; /* Largeur complète sur les écrans mobiles */
+  }
+
+  .banner .banner-background img {
+    width: 100%; /* Largeur complète pour l'image */
+    height: auto; /* Hauteur automatique pour l'image */
+  }
+
+  .banner .banner-background-txt {
+    font-size: 24px;
+  }
+}

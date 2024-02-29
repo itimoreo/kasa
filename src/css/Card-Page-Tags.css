@@ -1,0 +1,9 @@
+.tag {
+    border: 1px solid #FF6060; /* Ajustez la couleur et l'épaisseur de la bordure selon vos besoins */
+    padding: 15px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: #FF6060;
+    color: white;
+    font-weight: 600;
+}
