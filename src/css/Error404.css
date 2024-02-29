@@ -1,0 +1,16 @@
+.error-Title{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 137px;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+.error-Txt{
+    color: #FF6060;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}

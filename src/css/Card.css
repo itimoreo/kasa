@@ -1,19 +1,23 @@
 .card {
-    background: linear-gradient(180deg, rgb(255, 55, 55) 42%, rgba(255, 31, 31, 0.795) 99.99%, rgb(255, 64, 64) 100%);
-    border-radius: 8px;
+    background: linear-gradient(180deg, #FF6060, #fd4d4d 100%);
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 16px;
     margin: 10px;
     width: 340px ;
     height: 340px;
     flex-basis: calc(33.33% - 20px);
 }
+.card a {
+    text-decoration: none;
+}
+
 
 .card-title {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+  padding-left: 5px;
 }
 
 .card-description {
@@ -26,6 +30,8 @@
   height: auto;
   margin-bottom: 8px;
   object-fit: contain;
+  border-top-left-radius: 10px ;
+  border-top-right-radius: 10px ;
 }
 
 .card-button {
