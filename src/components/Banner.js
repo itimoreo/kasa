@@ -14,6 +14,9 @@ const Banner = () => {
     image = null;
   } else {
     switch (location.pathname) {
+      case '/error404':
+        image = null;
+        break;
       case '/about':
         image = background2;
         break;

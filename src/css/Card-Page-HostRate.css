@@ -20,3 +20,11 @@
     margin-top: 10px;
     margin-left: 115px;
   }
+
+  @media (max-width: 375px) {
+    .star-rating {
+      font-size: 25px;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
