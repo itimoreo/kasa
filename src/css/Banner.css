@@ -66,25 +66,3 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  /* Media Query for Mobile M */
-@media (max-width: 375px) {
-  .banner .banner-content {
-    flex-direction: column;
-    font-size: 16px;
-  }
-
-  .banner .banner-content .kasa-logo,
-  .banner .banner-content .banner-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .banner .banner-background {
-    max-width: 100%; /* Largeur maximale sur les écrans mobiles */
-    max-height: none; /* Supprime la hauteur maximale sur les écrans mobiles */
-  }
-
-  .banner .banner-background-txt {
-    font-size: 24px;
-  }
-}

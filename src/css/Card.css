@@ -37,3 +37,12 @@
   display: inline-block;
   margin-top: 8px;
 }
+
+@media (max-width: 375px) {
+  .card {
+    width: 315px;
+    height: 300px;
+
+  }
+  
+}

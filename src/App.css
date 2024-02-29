@@ -54,7 +54,7 @@
 
 .banner .banner-background{
   margin-top: 20px;
-  border: 1px solid #000;
+  border: 0px solid #000;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -95,27 +95,43 @@
 }
 
 @media (max-width: 375px) {
-  .banner .banner-content {
-    flex-direction: column;
-    font-size: 16px;
+  .App{
+    padding: 5px;
   }
+  .banner .banner-content {
+    flex-direction: row;
+    font-size: 16px;
+  } 
+
 
   .banner .banner-content .kasa-logo,
   .banner .banner-content .banner-links {
     flex-direction: column;
     align-items: center;
+    img{
+      width: 70%;
+    }
   }
 
   .banner .banner-background {
     width: 100%; /* Largeur complète sur les écrans mobiles */
+    height: 111px; /* Hauteur automatique pour l'image */
   }
 
   .banner .banner-background img {
     width: 100%; /* Largeur complète pour l'image */
-    height: auto; /* Hauteur automatique pour l'image */
+    height: 111px; /* Hauteur automatique pour l'image */
   }
 
   .banner .banner-background-txt {
     font-size: 24px;
+    left: 131px;
+    transform: translate(-30%, -50%);
+  }
+
+  .Footer{
+    width: 100vw;
+    height: 100px;
+
   }
 }
