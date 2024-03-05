@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .host-image {
@@ -11,8 +12,15 @@
   }
   
   .host-name {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: #FF6060;
     margin-left: 105px;
     margin-right: 15px;
+    white-space: pre-wrap;
+    max-width: calc(100% - 170px - 22px);
+    text-align: right;
   }
   
   .star-rating {

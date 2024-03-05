@@ -46,9 +46,11 @@ const Banner = () => {
       {image && (
         <div className='banner-background'>
           <img src={image} alt="Background"/>
-          <div className='banner-background-txt'>
-            Chez vous, partout et ailleurs
-          </div>
+          {location.pathname !== '/about' && (
+            <div className='banner-background-txt'>
+              Chez vous, partout et ailleurs
+            </div>
+          )}
         </div>
       )}
     </div>

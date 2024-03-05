@@ -68,6 +68,18 @@
   position: relative;
   width: 1240px;
   height: 223px;
+  position: relative;
+}
+.banner .banner-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Noir semi-transparent */
+  border-radius: 25px; /* Ajouté pour suivre la bordure de l'image */
+  z-index: 1;
 }
 
 .banner .banner-background img {
@@ -85,7 +97,8 @@
   color: white;
   font-size: 40px;
   font-family: Montserrat ;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
 }
 
 .banner.location-page .kasa-logo {
