@@ -28,10 +28,13 @@ const Banner = () => {
   // Determine if we are on a location page
   const isLocationPage = /^\/card\/.+$/.test(location.pathname);
 
+  // Determine if we are on the home page
+  const isHomePage = location.pathname === '/';
+
   // Return the banner component
   return (
     <div className={`banner ${isLocationPage ? 'location-page' : ''}`}>
-      <div className="banner-content">
+      <div className={`banner-content ${isHomePage ? 'home-page' : ''}`}>
         <div className="kasa-logo">
           <img src={logo} alt="Kasa logo" />
         </div>

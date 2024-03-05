@@ -4,7 +4,7 @@ import '../css/Card-Page-HostRate.css';
 function StarRating({ rating }) {
   const stars = [1, 2, 3, 4, 5].map((star) => {
     return (
-      <span key={star} style={{ color: rating >= star ? 'gold' : 'grey' }}> 
+      <span key={star} style={{ color: rating >= star ? '#FF6060' : 'grey' }}> 
         {rating >= star ? '★' : '☆'}
       </span>
     );

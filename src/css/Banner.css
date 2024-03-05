@@ -1,7 +1,7 @@
 .banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
     background-color: #fff;
@@ -32,9 +32,7 @@
     outline: none;
   }
   
-  .banner .banner-links a.home {
-    padding-right: 15px;
-  }
+
   
   .banner .banner-background {
     margin-top: 20px;
