@@ -111,47 +111,40 @@
 }
 
 @media (max-width: 375px) {
-  .App{
-    padding: 5px;
-  }
-  .banner{
-    margin-left: 0;
-  }
-  .banner .banner-content {
-    flex-direction: row;
-    justify-content: space-between; /* Ajouté pour espacer les éléments */
-    font-size: 16px;
-  } 
+  
+  .App, .App.location-page {
+      padding: 5px;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
   .banner, .banner.location-page {
-    margin-left: 0px;
+      margin-left: 0;
+    }
+  .banner .banner-content, .banner.location-page .banner-content {
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+  .banner .banner-content .kasa-logo img, .banner.location-page .banner-content .kasa-logo img {
+      width: 145px;
+      height: auto;
   }
-
-  .banner .banner-content .kasa-logo {
-    align-self: flex-start; /* Aligne le logo à gauche */
-  }
-
-  .banner .banner-content .banner-links {
-    align-self: flex-end; /* Aligne les liens à droite */
-  }
-
-  .banner .banner-background {
-    width: 90%; /* Largeur réduite à 90% */
-    height: auto; /* Hauteur automatique pour maintenir le ratio d'aspect */
-    margin: 0 auto; /* Centré horizontalement */
-  }
-
-  .banner .banner-background img {
-    width: 100%;
-    height: 111px; /* Hauteur automatique pour maintenir le ratio d'aspect */
-  }
-
-  .banner .banner-background-txt {
-    font-size: 20px;
-    left: 142px;
-    transform: translate(-30%, -50%);
-  }
-
-  .Footer{
+  .banner .banner-background, .banner.location-page .banner-background {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  .banner .banner-background img, .banner.location-page .banner-background img {
+      width: 100%;
+      height: 111px;
+    }
+  .banner .banner-background-txt, .banner.location-page .banner-background-txt {
+      font-size: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  .Footer {
     width: 100vw;
     height: 100px;
   }
