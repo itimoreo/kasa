@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../css/App.css';
 import { useLocation } from 'react-router-dom';
 import background from '../assets/Image source 1.png';
 import background2 from '../assets/Image source 2.png';

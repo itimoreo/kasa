@@ -2,7 +2,7 @@
 import React from 'react';
 import '../css/Body.css';
 import jsonData from '../json/appart.json'; 
-import Card from './Card';
+import Card from '../components/Card';
 
 function Body({ data = jsonData }) {
   if (!data) {

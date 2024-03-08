@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/About.css";
-import CollapsibleSection from "./CollapsibleSection";
+import CollapsibleSection from "../components/CollapsibleSection";
 import data from "../json/about.json";
 
 function About() {

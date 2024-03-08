@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import jsonData from "../json/appart.json";
-import Banner from "./Banner";
-import Slider from "./Card-Page-Slider";
-import HostRating from "./Card-Page-HostRate";
-import CollapsibleSection from "./CollapsibleSection";
-import CollapsibleContainer from "./CollapsibleContainer";
-import CardTag from "./Card-Page-Tags";
+import Banner from "../components/Banner";
+import Slider from "../components/Slider";
+import HostRating from "../components/HostRate";
+import CollapsibleSection from "../components/CollapsibleSection";
+import CollapsibleContainer from "../components/CollapsibleContainer";
+import CardTag from "../components/Tags";
 import "../css/Card-Page.css";
 
 function CardPage() {
