@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import jsonData from "../json/appart.json";
 import Banner from "../components/Banner";
 import Slider from "../components/Slider";
@@ -11,11 +11,23 @@ import "../css/Card-Page.css";
 
 function CardPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const stringId = String(id);
   const item = jsonData.find((item) => item.id === stringId);
 
   const [isDescriptionOpen, setDescriptionOpen] = useState(false);
   const [isEquipmentsOpen, setEquipmentsOpen] = useState(false);
+
+  useEffect(() => {
+    // Si l'id ou la carte n'existe pas, redirigez vers la page d'erreur 404
+    if (!id || !item) {
+      navigate('/error404');
+    }
+  }, [id, item, navigate]);
+
+  if (!item) {
+    return null;
+  }
 
   return (
     <div className="card-page">

@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom";
 import "../css/App.css";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
@@ -19,6 +19,7 @@ function App() {
             <Route path="/card/:id" element={<CardPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/error404" element={<Error404 />} />
+            <Route path="/*" element={<Navigate to="/error404" />} />
           </Routes>
         </div>
         <div className="Footer">
