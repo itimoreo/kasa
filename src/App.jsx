@@ -7,7 +7,7 @@ import Body from "./components/Body";
 import About from "./components/About";
 import background from "./assets/Image source 1.png";
 import CardPage from "./components/Card-Page";
-import Error404 from "./components/Error404.js";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
