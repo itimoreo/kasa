@@ -9,7 +9,7 @@ const CollapsibleSection = ({ title, isOpen, onToggleOpen, children }) => (
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
     </div>
-    <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
+    <div className={`collapse-content ${isOpen ? 'open' : ''}`}  >
       {children}
     </div>
   </div>

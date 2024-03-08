@@ -2,7 +2,7 @@
     background: linear-gradient(180deg, #FF6060, #fd4d4d 100%);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin-bottom: 20px;
     width: 340px ;
     height: 340px;
     flex-basis: calc(33.33% - 20px);
@@ -27,9 +27,9 @@
 
 .card-cover {
   width: 100%;
-  height: auto;
+  height: 240px;
   margin-bottom: 8px;
-  object-fit: contain;
+  object-fit: cover;
   border-top-left-radius: 10px ;
   border-top-right-radius: 10px ;
 }
@@ -50,9 +50,12 @@
     height: 300px;
 
   }
+  .card-cover{
+    height: 220px;
+  }
   .card-title {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 8px;
     padding-left: 5px;

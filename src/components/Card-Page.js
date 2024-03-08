@@ -1,38 +1,38 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import jsonData from '../json/appart.json';
-import Banner from './Banner';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import jsonData from "../json/appart.json";
+import Banner from "./Banner";
 import Slider from "./Card-Page-Slider";
-import HostRating from './Card-Page-HostRate'
-import CollapsibleSection from './CollapsibleSection';
-import CollapsibleContainer from './CollapsibleContainer';
-import CardTag from './Card-Page-Tags';
-import '../css/Card-Page.css'
+import HostRating from "./Card-Page-HostRate";
+import CollapsibleSection from "./CollapsibleSection";
+import CollapsibleContainer from "./CollapsibleContainer";
+import CardTag from "./Card-Page-Tags";
+import "../css/Card-Page.css";
 
 function CardPage() {
   const { id } = useParams();
   const stringId = String(id);
-  const item = jsonData.find(item => item.id === stringId);
+  const item = jsonData.find((item) => item.id === stringId);
 
   const [isDescriptionOpen, setDescriptionOpen] = useState(false);
   const [isEquipmentsOpen, setEquipmentsOpen] = useState(false);
 
   return (
     <div className="card-page">
-      <div className='slider'>
+      <div className="slider">
         <Slider />
       </div>
-      <div className='cards-title-desc'>
+      <div className="cards-title-desc">
         <h2>{item.title}</h2>
         <p>{item.location}</p>
       </div>
-      <div className='host-tags-container'>
-        <div className='container-host'>
-          <div className='card-host-rating'>
+      <div className="host-tags-container">
+        <div className="container-host">
+          <div className="card-host-rating">
             <HostRating item={item} />
           </div>
         </div>
-        
+
         <CardTag tags={item.tags} />
       </div>
       <CollapsibleContainer>

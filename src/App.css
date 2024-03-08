@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100vw;
   align-items: stretch;
   justify-content: space-between;
 }
@@ -26,10 +27,10 @@
   align-items: stretch;
   position: relative;
   z-index: 1;
-  background-color: #fff;
   padding: 20px 0;
   margin-bottom: 20px;
-  margin-left: 300px;
+  /* margin-left: 300px; */
+  align-items: center;
 }
 
 .banner .banner-content, .banner.location-page .banner-content {
@@ -50,12 +51,19 @@
   margin-left: auto; /* Aligne les liens à droite */
   
 }
+.kasa-logo{
+  margin-right: 700px;
+
+}
+a.home{
+  margin-right: 20px;
+
+}
 
 .banner .banner-links a {
   text-decoration: none;
   color: #000;
   outline: none;
-  padding-right: 15px ;
 }
 
 .banner .banner-background {
@@ -113,12 +121,19 @@
 @media (max-width: 375px) {
   
   .App, .App.location-page {
-      padding: 5px;
       max-width: 100%;
       overflow-x: hidden;
     }
+  .Content{
+    margin-left: 20px;
+  }
+  .kasa-logo{
+      margin-right: 20px;
+    
+    }
   .banner, .banner.location-page {
-      margin-left: 0;
+      margin-left: 8px;
+      margin-right: 10px;
     }
   .banner .banner-content, .banner.location-page .banner-content {
       flex-direction: row;
@@ -141,9 +156,15 @@
     }
   .banner .banner-background-txt, .banner.location-page .banner-background-txt {
       font-size: 20px;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: 145px;
+      transform: translate(-40%, -50%);
     }
+    .banner.location-page .banner-links {
+      margin-right: -70px;
+      flex: none;
+      text-align: none;
+    }
+
   .Footer {
     width: 100vw;
     height: 100px;

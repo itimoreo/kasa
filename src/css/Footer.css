@@ -19,3 +19,9 @@
 .footer img {
     filter: grayscale(100%) contrast(10000%);
 }
+
+@media (max-width: 375px) {
+    .footer {
+        font-size: 16px;
+    }
+}
