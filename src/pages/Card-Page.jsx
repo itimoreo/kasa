@@ -44,7 +44,6 @@ function CardPage() {
             <HostRating item={item} />
           </div>
         </div>
-
         <CardTag tags={item.tags} />
       </div>
       <CollapsibleContainer>
