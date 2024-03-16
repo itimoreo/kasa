@@ -11,7 +11,7 @@ function NextArrow(props) {
   return (
     <div
     className={`${className} custom-next-arrow`}
-    style={{ ...style, display: 'block', right: '25px', top: '50%',}}
+    style={{ ...style, display: 'block', right: '45px', top: '50%',}}
     onClick={onClick}
   >
       <svg
