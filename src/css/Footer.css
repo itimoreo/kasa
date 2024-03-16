@@ -20,7 +20,7 @@
     filter: grayscale(100%) contrast(10000%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
     .footer {
         font-size: 16px;
     }

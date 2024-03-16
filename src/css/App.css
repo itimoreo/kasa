@@ -118,7 +118,7 @@ a.home{
   text-align: right;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   
   .App, .App.location-page {
       max-width: 100%;
