@@ -58,6 +58,7 @@ const CardPageSlider = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [appartment, setAppartment] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -72,6 +73,7 @@ const CardPageSlider = () => {
 
   const settings = {
     dots: false,
+    beforeChange: (current, next) => setCurrentSlide(next),
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -84,7 +86,7 @@ const CardPageSlider = () => {
 
   return (
     <div style={{ position: "relative" }}>
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings} className="my-slider">
         {appartment &&
           appartment.pictures.map((picture, index) => (
             <div key={index}>
@@ -100,8 +102,12 @@ const CardPageSlider = () => {
             </div>
           ))}
       </Slider>
+      <div style={{ position: "absolute", bottom: "10px", left: "50%", transform: "translateX(-50%)", color: "white", fontFamily: "Montserrat" }}>
+        {currentSlide + 1}/{appartment ? appartment.pictures.length : 0}
+      </div>
     </div>
   );
 };
+
 
 export default CardPageSlider;
